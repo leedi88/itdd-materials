@@ -1,0 +1,16 @@
+# This workflow will build a Swift project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
+
+name: localization
+
+on:
+  pull_request:
+    types: [ "opened" ]
+    branches: [ "lokalise*" ]
+
+jobs:
+  auto-localization:
+    runs-on: macos-latest
+    steps:
+    - name: Test github action hook Locaklization PR Opened
+      run: echo "Lokalise PR Opened!"
