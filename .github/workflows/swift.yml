@@ -5,6 +5,9 @@ name: Delete Branch on Close PR
 on: 
   pull_request:
     types: [closed]
+    
+permissions:
+  pull-requests: write
   
 jobs:
   delete-branch:
